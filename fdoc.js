@@ -118,4 +118,41 @@ const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is 
     
 
 
-    //
+    //2.a
+
+    for(let i=0;i<=7;i++)
+    {
+        let s='';
+        for (let j=0;j<i;j++)
+        {
+            s+='#';
+        }
+       console.log(s);
+    }
+
+    //2.b
+
+    function sevenRandomNumbers()
+    {
+        let arr=[],i=0,count=0;
+        arr[0]=Math.floor(Math.random()*10);
+       
+        while(arr.length!=7)
+        {
+            
+                x=Math.floor(Math.random()*10);
+               for(let j=0;j<arr.length;j++)
+                {
+                     if(x==arr[j])
+                      count++;
+                 }
+                 if(count==0)
+                 {
+                    arr[i++]=x;
+                    
+                 }
+                 count=0;
+        }
+        console.log(arr);
+    }
+    sevenRandomNumbers();
