@@ -171,3 +171,25 @@ const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is 
     }
 
     console.log(reverseArray(["A", "B", "C"]));
+
+
+    //2.d
+ function checkUniqueness(arr)
+ {
+    for(let i=0;i<arr.length;i++)
+    {
+        let check=arr[i];
+        for(let j=i+1;j<arr.length;j++)
+        {
+            if(check==arr[j])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+ }
+ const arrOne = [1, 4, 6, 2, 1];
+ const arrTwo = [1, 4, 6, 2, 3]
+console.log(checkUniqueness(arrTwo));
+    console.log(checkUniqueness(arrOne));
