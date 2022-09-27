@@ -156,3 +156,18 @@ const sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is 
         console.log(arr);
     }
     sevenRandomNumbers();
+
+
+    //2.c
+
+    function reverseArray(arr)
+    {
+        let result=[];
+        for(let i=arr.length-1;i>=0;i--)
+        {
+             result[arr.length-1-i]=arr[i];
+        }
+        return result;
+    }
+
+    console.log(reverseArray(["A", "B", "C"]));
